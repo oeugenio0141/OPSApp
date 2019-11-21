@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="8IG-8m-WzS" userLabel="What We Do View" customClass="WhatWeDoView">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our Vision" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cE8-Uc-0ZE">
+                    <rect key="frame" x="16" y="36" width="992" height="41"/>
+                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" text="Solving business challenges through our digital journey guiding pillars." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ner-xP-buj">
+                    <rect key="frame" x="16" y="87" width="992" height="31.5"/>
+                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="23"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="xXk-wI-mzI" userLabel="WWD Stack View 1">
+                    <rect key="frame" x="100" y="138.5" width="824" height="150"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wwd_digital_presence" translatesAutoresizingMaskIntoConstraints="NO" id="mou-uh-u17">
+                            <rect key="frame" x="0.0" y="0.0" width="387" height="150"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="wwd_web_mobile_tech" translatesAutoresizingMaskIntoConstraints="NO" id="XqN-Sf-gc1">
+                            <rect key="frame" x="437" y="0.0" width="387" height="150"/>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="tR5-r6-8w9"/>
+                    </constraints>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hdr-UB-OuV" userLabel="Digital Presence Stack View">
+                    <rect key="frame" x="118.5" y="298.5" width="350" height="72.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" text="Digital Presence" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8mB-uJ-cN7">
+                            <rect key="frame" x="87.5" y="0.0" width="175" height="31.5"/>
+                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="23"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" text="Building brands through great user experience and data-driven strategy." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uCC-kH-Ld3">
+                            <rect key="frame" x="3.5" y="31.5" width="343.5" height="41"/>
+                            <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="350" id="Mqc-9H-t0a"/>
+                    </constraints>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Leu-KS-tB3" userLabel="Digital Presence Stack View">
+                    <rect key="frame" x="118.5" y="548.5" width="350" height="52"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" text="IT Services &amp; Infrastructure" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HPU-fD-ofq">
+                            <rect key="frame" x="30" y="0.0" width="290.5" height="31.5"/>
+                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="23"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" text="Building the foundation of a smart office." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JVd-7Y-sn1">
+                            <rect key="frame" x="39" y="31.5" width="272" height="20.5"/>
+                            <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="350" id="4LI-UT-o5A"/>
+                    </constraints>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Y1f-L8-Ibs" userLabel="Web &amp; Mobile Stack View">
+                    <rect key="frame" x="555.5" y="298.5" width="350" height="72.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" text="Web &amp; Mobile Technology" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpe-Lg-yF4">
+                            <rect key="frame" x="33" y="0.0" width="284.5" height="31.5"/>
+                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="23"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" text="Managing and developing software solutions from end to end." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2T1-0e-hwq">
+                            <rect key="frame" x="6" y="31.5" width="338.5" height="41"/>
+                            <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="350" id="Exc-S9-ojt"/>
+                    </constraints>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="zcv-uJ-qwY" userLabel="WWD Stack View 2">
+                    <rect key="frame" x="100" y="388.5" width="824" height="150"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wwd_it_services_infra" translatesAutoresizingMaskIntoConstraints="NO" id="5Fq-Ju-xaH">
+                            <rect key="frame" x="0.0" y="0.0" width="387" height="150"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="wwd_analytics" translatesAutoresizingMaskIntoConstraints="NO" id="OOY-Cq-zsx">
+                            <rect key="frame" x="437" y="0.0" width="387" height="150"/>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="JBX-Bb-6Mk"/>
+                    </constraints>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="OfK-Fx-Tge" userLabel="Digital Presence Stack View">
+                    <rect key="frame" x="555.5" y="548.5" width="350" height="93"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" text="System Integration &amp; Analytics" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nGF-9f-Pby">
+                            <rect key="frame" x="9.5" y="0.0" width="331.5" height="31.5"/>
+                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="23"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3O-by-NML">
+                            <rect key="frame" x="9.5" y="31.5" width="331.5" height="61.5"/>
+                            <string key="text">Transforming data to drive businesses to the next wave of productivity and growth.
+</string>
+                            <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="350" id="6dC-Si-JqM"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="zcv-uJ-qwY" firstAttribute="leading" secondItem="SvD-U5-TCt" secondAttribute="leading" constant="100" id="E74-nC-juB"/>
+                <constraint firstItem="SvD-U5-TCt" firstAttribute="trailing" secondItem="ner-xP-buj" secondAttribute="trailing" constant="16" id="FG7-BB-UIa"/>
+                <constraint firstItem="hdr-UB-OuV" firstAttribute="top" secondItem="xXk-wI-mzI" secondAttribute="bottom" constant="10" id="Fgz-fp-868"/>
+                <constraint firstItem="OfK-Fx-Tge" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Leu-KS-tB3" secondAttribute="trailing" constant="16" id="GiT-Z7-K54"/>
+                <constraint firstAttribute="trailing" secondItem="zcv-uJ-qwY" secondAttribute="trailing" constant="100" id="IFD-ot-msU"/>
+                <constraint firstItem="hdr-UB-OuV" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="SvD-U5-TCt" secondAttribute="leading" constant="16" id="JLR-V5-ZoV"/>
+                <constraint firstItem="cE8-Uc-0ZE" firstAttribute="top" secondItem="SvD-U5-TCt" secondAttribute="top" constant="16" id="Ktz-Mv-Cob"/>
+                <constraint firstItem="Leu-KS-tB3" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="SvD-U5-TCt" secondAttribute="leading" constant="16" id="L8g-CJ-Qeb"/>
+                <constraint firstItem="Y1f-L8-Ibs" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="hdr-UB-OuV" secondAttribute="trailing" constant="16" id="NP9-VW-j1w"/>
+                <constraint firstItem="OfK-Fx-Tge" firstAttribute="top" secondItem="OOY-Cq-zsx" secondAttribute="bottom" constant="10" id="NkE-PZ-g3D"/>
+                <constraint firstItem="OfK-Fx-Tge" firstAttribute="centerX" secondItem="OOY-Cq-zsx" secondAttribute="centerX" id="THN-Ml-uJC"/>
+                <constraint firstItem="SvD-U5-TCt" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Y1f-L8-Ibs" secondAttribute="trailing" constant="16" id="UrC-NI-HOt"/>
+                <constraint firstItem="Y1f-L8-Ibs" firstAttribute="top" secondItem="XqN-Sf-gc1" secondAttribute="bottom" constant="10" id="bAg-Mi-egy"/>
+                <constraint firstItem="cE8-Uc-0ZE" firstAttribute="leading" secondItem="SvD-U5-TCt" secondAttribute="leading" constant="16" id="bQ3-g7-YNb"/>
+                <constraint firstItem="Y1f-L8-Ibs" firstAttribute="centerX" secondItem="XqN-Sf-gc1" secondAttribute="centerX" id="cEh-Rg-lMc"/>
+                <constraint firstItem="SvD-U5-TCt" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="OfK-Fx-Tge" secondAttribute="trailing" constant="16" id="dhc-me-R0h"/>
+                <constraint firstItem="xXk-wI-mzI" firstAttribute="leading" secondItem="8IG-8m-WzS" secondAttribute="leading" constant="100" id="dzH-11-Fej"/>
+                <constraint firstItem="ner-xP-buj" firstAttribute="leading" secondItem="SvD-U5-TCt" secondAttribute="leading" constant="16" id="oSa-hu-Lpw"/>
+                <constraint firstItem="hdr-UB-OuV" firstAttribute="centerX" secondItem="mou-uh-u17" secondAttribute="centerX" id="pEN-Ir-SZN"/>
+                <constraint firstItem="xXk-wI-mzI" firstAttribute="top" secondItem="ner-xP-buj" secondAttribute="bottom" constant="20" id="qOk-7G-qYV"/>
+                <constraint firstItem="ner-xP-buj" firstAttribute="top" secondItem="cE8-Uc-0ZE" secondAttribute="bottom" constant="10" id="rSJ-Lr-V0f"/>
+                <constraint firstItem="Leu-KS-tB3" firstAttribute="centerX" secondItem="5Fq-Ju-xaH" secondAttribute="centerX" id="sz2-IU-nUK"/>
+                <constraint firstItem="Leu-KS-tB3" firstAttribute="top" secondItem="5Fq-Ju-xaH" secondAttribute="bottom" constant="10" id="tJ6-Ix-IEz"/>
+                <constraint firstItem="SvD-U5-TCt" firstAttribute="trailing" secondItem="cE8-Uc-0ZE" secondAttribute="trailing" constant="16" id="vJO-QN-yOT"/>
+                <constraint firstItem="zcv-uJ-qwY" firstAttribute="top" secondItem="xXk-wI-mzI" secondAttribute="bottom" constant="100" id="wdk-Tx-YUy"/>
+                <constraint firstItem="SvD-U5-TCt" firstAttribute="trailing" secondItem="xXk-wI-mzI" secondAttribute="trailing" constant="100" id="z4a-Xg-r9h"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SvD-U5-TCt"/>
+            <point key="canvasLocation" x="-152.34375" y="32.8125"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="wwd_analytics" width="500" height="500"/>
+        <image name="wwd_digital_presence" width="500" height="500"/>
+        <image name="wwd_it_services_infra" width="500" height="500"/>
+        <image name="wwd_web_mobile_tech" width="500" height="500"/>
+    </resources>
+</document>

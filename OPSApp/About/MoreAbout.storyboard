@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eTA-18-eq5">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="3FF-rD-ge3">
+            <objects>
+                <navigationController id="eTA-18-eq5" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Lzq-9Q-13L">
+                        <rect key="frame" x="0.0" y="20" width="1024" height="50"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="I8r-nE-Grn" kind="relationship" relationship="rootViewController" id="RTk-6B-HIC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A84-6N-Ssn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-550" y="-9"/>
+        </scene>
+        <!--About Us-->
+        <scene sceneID="FQM-u7-OeD">
+            <objects>
+                <viewController id="I8r-nE-Grn" customClass="MoreAboutViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="m2q-SN-FEe">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="NlT-db-nki">
+                                <rect key="frame" x="16" y="80" width="992" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="4Ru-VR-yWM"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Mission"/>
+                                    <segment title="VIsion"/>
+                                    <segment title="What we do"/>
+                                </segments>
+                                <color key="tintColor" red="0.28020843863487244" green="0.64592641592025757" blue="0.73226660490036011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="didTappedMoreAboutSegment:" destination="I8r-nE-Grn" eventType="valueChanged" id="lWw-mP-Cch"/>
+                                </connections>
+                            </segmentedControl>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K2W-iQ-oGc">
+                                <rect key="frame" x="16" y="136" width="992" height="616"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="K2W-iQ-oGc" firstAttribute="top" secondItem="NlT-db-nki" secondAttribute="bottom" constant="16" id="4Er-KW-RQV"/>
+                            <constraint firstItem="nVn-8z-Tqf" firstAttribute="bottom" secondItem="K2W-iQ-oGc" secondAttribute="bottom" constant="16" id="6Yd-IT-lpV"/>
+                            <constraint firstItem="NlT-db-nki" firstAttribute="top" secondItem="nVn-8z-Tqf" secondAttribute="top" constant="10" id="Fx5-B3-6YV"/>
+                            <constraint firstItem="K2W-iQ-oGc" firstAttribute="leading" secondItem="nVn-8z-Tqf" secondAttribute="leading" constant="16" id="eit-Dd-w2A"/>
+                            <constraint firstItem="NlT-db-nki" firstAttribute="leading" secondItem="nVn-8z-Tqf" secondAttribute="leading" constant="16" id="guV-cE-8OS"/>
+                            <constraint firstItem="nVn-8z-Tqf" firstAttribute="trailing" secondItem="NlT-db-nki" secondAttribute="trailing" constant="16" id="oq1-xA-OcN"/>
+                            <constraint firstItem="nVn-8z-Tqf" firstAttribute="trailing" secondItem="K2W-iQ-oGc" secondAttribute="trailing" constant="16" id="sOB-KY-dbH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nVn-8z-Tqf"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="About Us" id="c2d-pq-haI">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="CaD-dC-9zZ">
+                            <connections>
+                                <action selector="didTappedBackButton:" destination="I8r-nE-Grn" id="6nP-nA-FlK"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="aboutUsView" destination="K2W-iQ-oGc" id="SyH-lL-9Tm"/>
+                        <outlet property="moreAboutSegment" destination="NlT-db-nki" id="fHr-Ox-USZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KHN-cG-pEG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="187" y="-9"/>
+        </scene>
+    </scenes>
+</document>

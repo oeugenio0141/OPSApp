@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iD7-I7-n3S" customClass="HomeView">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="92A-VW-hpB" userLabel="Header">
+                    <rect key="frame" x="0.0" y="28" width="1024" height="75"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ops_logo" translatesAutoresizingMaskIntoConstraints="NO" id="GWb-WZ-vR7">
+                            <rect key="frame" x="0.0" y="10" width="1024" height="55"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="GWb-WZ-vR7" secondAttribute="trailing" id="TmP-Vz-lky"/>
+                        <constraint firstItem="GWb-WZ-vR7" firstAttribute="top" secondItem="92A-VW-hpB" secondAttribute="top" constant="10" id="YSK-RI-mKT"/>
+                        <constraint firstAttribute="bottom" secondItem="GWb-WZ-vR7" secondAttribute="bottom" constant="10" id="dt0-CS-zjB"/>
+                        <constraint firstItem="GWb-WZ-vR7" firstAttribute="leading" secondItem="92A-VW-hpB" secondAttribute="leading" id="hsT-Kc-GHi"/>
+                        <constraint firstAttribute="height" constant="75" id="oHo-kR-FKr"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Evt-AC-YuF" userLabel="Container View">
+                    <rect key="frame" x="0.0" y="88" width="1024" height="680"/>
+                    <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uFy-mm-oBP">
+                            <rect key="frame" x="0.0" y="0.0" width="1064" height="700"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UbP-8k-6TL" userLabel="Content View">
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="680"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gE2-Yj-cEZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="1024" height="680"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="gE2-Yj-cEZ" secondAttribute="trailing" id="1mG-Bg-8ha"/>
+                                        <constraint firstItem="gE2-Yj-cEZ" firstAttribute="top" secondItem="UbP-8k-6TL" secondAttribute="top" id="pWU-jp-fVU"/>
+                                        <constraint firstItem="gE2-Yj-cEZ" firstAttribute="leading" secondItem="UbP-8k-6TL" secondAttribute="leading" id="s7i-rM-IBR"/>
+                                        <constraint firstAttribute="bottom" secondItem="gE2-Yj-cEZ" secondAttribute="bottom" id="vLw-MV-Vlr"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="UbP-8k-6TL" secondAttribute="bottom" id="DCR-7L-ghW"/>
+                                <constraint firstItem="UbP-8k-6TL" firstAttribute="top" secondItem="uFy-mm-oBP" secondAttribute="top" id="Yby-55-edI"/>
+                                <constraint firstItem="UbP-8k-6TL" firstAttribute="leading" secondItem="uFy-mm-oBP" secondAttribute="leading" id="pQc-lX-ri8"/>
+                                <constraint firstAttribute="trailing" secondItem="UbP-8k-6TL" secondAttribute="trailing" id="ynR-0q-LtG"/>
+                            </constraints>
+                        </scrollView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="uFy-mm-oBP" secondAttribute="trailing" constant="-40" id="9sd-L9-GZN"/>
+                        <constraint firstItem="uFy-mm-oBP" firstAttribute="leading" secondItem="Evt-AC-YuF" secondAttribute="leading" id="JrR-Pf-4DT"/>
+                        <constraint firstItem="UbP-8k-6TL" firstAttribute="height" secondItem="Evt-AC-YuF" secondAttribute="height" id="VOv-lK-lNK"/>
+                        <constraint firstItem="UbP-8k-6TL" firstAttribute="width" secondItem="Evt-AC-YuF" secondAttribute="width" id="Xjr-6k-etf"/>
+                        <constraint firstAttribute="bottom" secondItem="uFy-mm-oBP" secondAttribute="bottom" constant="-20" id="o4a-fM-zjC"/>
+                        <constraint firstItem="uFy-mm-oBP" firstAttribute="top" secondItem="Evt-AC-YuF" secondAttribute="top" id="sEW-Yr-eti"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="uOF-ld-2aT" firstAttribute="trailing" secondItem="92A-VW-hpB" secondAttribute="trailing" id="CUW-Zh-djj"/>
+                <constraint firstItem="Evt-AC-YuF" firstAttribute="leading" secondItem="iD7-I7-n3S" secondAttribute="leading" id="LDT-F5-zi3"/>
+                <constraint firstItem="92A-VW-hpB" firstAttribute="leading" secondItem="uOF-ld-2aT" secondAttribute="leading" id="bZx-5b-DS5"/>
+                <constraint firstAttribute="trailing" secondItem="Evt-AC-YuF" secondAttribute="trailing" id="dKM-fY-lU0"/>
+                <constraint firstItem="Evt-AC-YuF" firstAttribute="top" secondItem="92A-VW-hpB" secondAttribute="bottom" constant="-15" id="doT-Sr-Fay"/>
+                <constraint firstAttribute="bottom" secondItem="Evt-AC-YuF" secondAttribute="bottom" id="eA8-Ak-1qo"/>
+                <constraint firstItem="92A-VW-hpB" firstAttribute="top" secondItem="uOF-ld-2aT" secondAttribute="top" constant="8" id="u5h-Hj-seq"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="uOF-ld-2aT"/>
+            <connections>
+                <outlet property="homeViewCarousel" destination="gE2-Yj-cEZ" id="YRm-6M-jEQ"/>
+            </connections>
+            <point key="canvasLocation" x="173.4375" y="-214.0625"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ops_logo" width="500" height="128"/>
+    </resources>
+</document>
